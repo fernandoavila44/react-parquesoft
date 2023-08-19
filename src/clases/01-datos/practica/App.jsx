@@ -1,11 +1,13 @@
-import practica01 from './index.js';
+import practica01 from ".";
+
 
 function EmptyApp() {
-  practica01()
+practica01();
   return (
-    <div>
+    <>
       👀 open console -&gt; F12
-    </div>
+    
+    </>
   );
 }
 

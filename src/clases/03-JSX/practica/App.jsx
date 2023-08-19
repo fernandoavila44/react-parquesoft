@@ -2,23 +2,31 @@ import movies from '@/fakeApi/movies.json'
 import Header from './components/Header'
 
 function Practica02() {
-  function piratear(edad) {
-    console.log(`Asegurate de tener ${edad} años`)
+  function edad_minima(edad) {
+    console.log(`Edad Minima ${edad} años`)
   }
   return (
     <div>
       <Header />
-      <h1>{movies[0].name}</h1>
-      <p>
-        {movies[0].genre}
-      </p>
+      <FirtsMovie />
+      <GenederMovie />
+      
       <button
-        onClick={() => piratear(movies[0].edad_minima)}
+        onClick={() => edad_minima(movies[0].edad_minima)}
       >
-        Ver pirata
+        Ver Pelicula
       </button>
     </div>
   )
 }
+
+const FirtsMovie = () =>{
+  return <h1>Titulo de la primer pelicula: {movies[0].nombre}</h1>
+}
+
+const GenederMovie = () =>{
+  return <p>El Genero de la Primer Pelicula es: {movies[0].genero}</p>
+}
+
 
 export default Practica02

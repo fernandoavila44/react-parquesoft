@@ -53,7 +53,7 @@ const practica01 = () => {
   const totalPets = users.reduce((acc, user) => {
     return acc + user.mascotas.length
   }, 0)
-  console.log(totalPets)
+  
 }
 
 export default practica01

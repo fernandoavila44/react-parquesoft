@@ -3,6 +3,7 @@ import sburbImage from '@/assets/sburb.svg'
 function JSX() {
   // dentro de un componente podemos escribir JS como siempre
   const isMateOk = 1 + 1 === 2
+  
   function handleClick(value) {
     console.log('click', value)
   }

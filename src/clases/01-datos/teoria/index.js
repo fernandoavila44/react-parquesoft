@@ -235,6 +235,11 @@ const JsData = () => {
       console.log(`${key} -> ${value}`)
     }
   )
+
 };
 
+
+
 export default JsData
+
+
