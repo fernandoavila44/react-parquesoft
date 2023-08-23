@@ -10,13 +10,13 @@ const practica01 = () => {
 
   // el color de la segunda 'mascota' del tercer Usuario
   console.log(users[2].mascotas[1].color)
-
+ console.log(users.length)
   // Usando desestructuracion:
   // extrae en variables el primer y cuarto elemento
-  const [first, , , fourth] = users
+  const [uno, , , cuarto] = users
 
   // usando lo obtenido arriba extrae en variables 'email' y 'mascotas' del primer elemento
-  const { email, mascotas } = first
+  const { email, mascotas } = uno
 
   // spread operator:
   // haz una copia de las 'mascotas' obtenidas arriba y agregale la mascota '{ "apodo": "Nami", "edad": 2, "color": "negro" }'
@@ -54,6 +54,8 @@ const practica01 = () => {
     return acc + user.mascotas.length
   }, 0)
   console.log(totalPets)
+
+
 }
 
 export default practica01
