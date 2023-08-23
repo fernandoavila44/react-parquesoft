@@ -44,4 +44,5 @@ const practica01 = () => {
 
 }
 
+console.log("prueba actualizacion")
 export default practica01
