@@ -1,10 +1,11 @@
-import practica01 from './index.js';
+
+import ejercicios from '../practicaDatos/ejercicios.js';
 
 function EmptyApp() {
-  practica01()
+  ejercicios()
   return (
     <div>
-      👀 open console -&gt; F12
+      Hola
     </div>
   );
 }
