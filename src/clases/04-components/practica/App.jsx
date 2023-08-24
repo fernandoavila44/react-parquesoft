@@ -1,34 +1,30 @@
-import Card from './Components/Card'
-import Title from './Components/Title'
-import List from './Components/List'
-import './styles.css'
+
+import Lista from "../practicaComponents/Lista"
+import Titulo from "../practicaComponents/Titulo"
+import Tarjeta from "../practicaComponents/Tarjeta"
 
 const Components = () => {
   return (
     <div className='flex-column'>
-      <Title title='Generos' />
-      <List>
-        <li>Accion</li>
-        <li>Romance</li>
-        <li>drama</li>
-      </List>
-      <Title title='Actores' />
-      <List>
-        <li>Leonardo DiCaprio</li>
-        <li>Brad Pitt</li>
-        <li>Tom Cruise</li>
-        <li>Will Smith</li>
-        <li>Julia Roberts</li>
-        <li>Angelina Jolie</li>
-        <li>Meryl Streep</li>
-        <li>Scarlett Johansson</li>
-      </List>
-      <Card>card children</Card>
-      <Card title='card title'>card children</Card>
-      <Card footer='card footer'>card children</Card>
-      <Card title='card title' footer='card footer'>
-        card children
-      </Card>
+      <Titulo titulo='Star Wars'/>
+      <Lista>
+        <li>Episodio VI: Retorno del Jedi</li>
+        <li>Serie: Andor</li>
+        <li>Episodio IV: Una nueva esperanza</li>
+      </Lista>
+      <Titulo titulo='Personajes' />
+      <Lista>
+        <li>Han Solo</li>
+        <li>Luke Skywalker</li>
+        <li>Leia Organa</li>
+        <li>Obi Wan Kenobi</li>
+        <li>Darth Vader</li>
+        <li>Cassian Andor</li>
+      </Lista>
+      <Tarjeta>Tarjetas</Tarjeta>
+      <Tarjeta titulo='titulo'>Tarjeta children</Tarjeta>
+      <Tarjeta footer='footer'>Tarjeta children</Tarjeta>
+      <Tarjeta titulo='titulo' footer='footer'> Tarjeta children</Tarjeta>
     </div>
   )
 }
