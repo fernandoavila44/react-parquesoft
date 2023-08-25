@@ -23,12 +23,10 @@ const Components = () => {
         <li>Meryl Streep</li>
         <li>Scarlett Johansson</li>
       </List>
-      <Card>card children</Card>
-      <Card title='card title'>card children</Card>
-      <Card footer='card footer'>card children</Card>
-      <Card title='card title' footer='card footer'>
-        card children
-      </Card>
+      <Card>Tarjeta children</Card>
+      <Card title='Tarjeta Titulo'>Tarjeta children</Card>
+      <Card footer='Tarjeta footer'>Tarjeta children</Card>
+      <Card title='Tarjeta Titulo' footer='Tarjeta footer'>Tarjeta children</Card>
     </div>
   )
 }
