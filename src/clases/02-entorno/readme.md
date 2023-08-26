@@ -1,4 +1,4 @@
-# Clase Entorno
+gi# Clase Entorno
 
 <details>
 <summary style="font-size:28px">Teoria</summary>

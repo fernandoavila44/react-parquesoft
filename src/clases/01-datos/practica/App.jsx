@@ -1,4 +1,4 @@
-import practica01 from './index.js';
+import practica01 from './index2.js';
 
 function EmptyApp() {
   practica01()
@@ -10,3 +10,5 @@ function EmptyApp() {
 }
 
 export default EmptyApp;
+
+

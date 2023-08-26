@@ -6,13 +6,13 @@ import './styles.css'
 const Components = () => {
   return (
     <div className='flex-column'>
-      <Title title='Generos' />
+      <Title title='kinds' />
       <List>
-        <li>Accion</li>
-        <li>Romance</li>
-        <li>drama</li>
+        <li>thriler</li>
+        <li>Comedy</li>
+        <li>Suspense</li>
       </List>
-      <Title title='Actores' />
+      <Title title='Actors' />
       <List>
         <li>Leonardo DiCaprio</li>
         <li>Brad Pitt</li>
