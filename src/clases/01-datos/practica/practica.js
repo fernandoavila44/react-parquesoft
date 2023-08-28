@@ -1,6 +1,6 @@
 import users from '@/fakeApi/users.json'
 
-const practica = () => {
+const practica02 = () => {
  // 1
  //email del primer Usuario.
   console.log(users[0].email)
@@ -42,4 +42,4 @@ const practica = () => {
   console.log(totalMascotas)
 }
 
-export default practica
+export default practica02
