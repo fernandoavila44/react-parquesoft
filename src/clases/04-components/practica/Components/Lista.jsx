@@ -1,4 +1,4 @@
-function List(props) {
+function Lista(props) {
   return (
     <ul>
       {props.children}
@@ -6,4 +6,4 @@ function List(props) {
   );
 }
 
-export default List;
+export default Lista;

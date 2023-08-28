@@ -1,19 +1,19 @@
-import Card from './Components/Card'
-import Title from './Components/Title'
-import List from './Components/List'
+import Tarjeta from './Components/Tarjeta'
+import Titulo from './Components/Titulo'
+import Lista from './Components/Lista'
 import './styles.css'
 
 const Components = () => {
   return (
     <div className='flex-column'>
-      <Title title='Generos' />
-      <List>
+      <Titulo title='Generos' />
+      <Lista>
         <li>Accion</li>
         <li>Romance</li>
         <li>drama</li>
-      </List>
-      <Title title='Actores' />
-      <List>
+      </Lista>
+      <Titulo title='Actores' />
+      <Lista>
         <li>Leonardo DiCaprio</li>
         <li>Brad Pitt</li>
         <li>Tom Cruise</li>
@@ -22,13 +22,13 @@ const Components = () => {
         <li>Angelina Jolie</li>
         <li>Meryl Streep</li>
         <li>Scarlett Johansson</li>
-      </List>
-      <Card>card children</Card>
-      <Card title='card title'>card children</Card>
-      <Card footer='card footer'>card children</Card>
-      <Card title='card title' footer='card footer'>
+      </Lista>
+      <Tarjeta>card children</Tarjeta>
+      <Tarjeta title='tarjeta title'>tarjeta niño</Tarjeta>
+      <Tarjeta footer='tarjeta footer'>tarjeta niño</Tarjeta>
+      <Tarjeta title='tarjeta title' footer='tarjeta footer'>
         card children
-      </Card>
+      </Tarjeta>
     </div>
   )
 }

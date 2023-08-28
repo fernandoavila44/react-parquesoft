@@ -1,4 +1,4 @@
-function Card(props) {
+function Tarjeta(props) {
   return (
     <div className="practica-4-card">
       {props.title ? <h1>{props.title}</h1> : undefined}
@@ -8,4 +8,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default Tarjeta;
