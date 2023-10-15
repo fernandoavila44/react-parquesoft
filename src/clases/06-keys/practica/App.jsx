@@ -1,51 +1,54 @@
-import products from '@/fakeApi/products.json'
-import accounts from '@/fakeApi/accounts.json'
-import users from '@/fakeApi/users.json'
-import ProductCard from './ProductCard'
+import productos from '@/fakeApi/products.json'
+import cuentas from '@/fakeApi/accounts.json'
+import usuarios from '@/fakeApi/users.json'
+import ProductCard from '../practicaKeys/ProductCard'
 
 const App = () => {
-  function handleAddToCart(id) {
+  function agregar(id) {
     console.log(`Agregado al carrito el producto con id ${id}`)
   }
 
   return (
     <div>
-      <div className='flex height-limited'>
-        {products.map((producto) => (
+      <div >
+        {productos.map((producto) => (
           <ProductCard
             key={producto.id}
-            product={producto}
-            onAddToCart={handleAddToCart}
+            item={producto}
+            agregarAlCarrito={agregar}
           />
         ))}
       </div>
       <hr />
-      <div className='flex height-limited'>
-        {accounts.map((cuenta) => (
-          <div className='card' key={cuenta.account}>
+      <div >
+        {cuentas.map((cuenta) =>(
+          <div  key={cuenta.account}>
             <a
-              target='_blank'
-              rel='noreferrer'
-              href={`https://twitter.com/${cuenta.account}`}
-            >
+             href={`https://twitter.com/ ${cuenta.account}`}>
               {cuenta.account}
             </a>
           </div>
+
         ))}
       </div>
       <hr />
-      <div className='flex height-limited'>
-        {users.map((usuario) => (
-          <div className='card' key={usuario.email}>
-            <h2>{usuario.apodo}</h2>
+      <div>
+        {usuarios.map((usuario)=>(
+          <div key={usuario.apodo}>
+            <h1>{usuario.apodo} </h1>
             <ul>
-              {usuario.mascotas.map((mascota) => (
+              {usuario.mascotas.map((mascota)=>(
                 <li key={mascota.nombre}>
-                  {mascota.nombre} ({mascota.edad}): {mascota.color}
+                  {mascota.nombre} ({mascota.edad}) : {mascota.color}
+
                 </li>
+
               ))}
             </ul>
+
           </div>
+
+
         ))}
       </div>
     </div>
