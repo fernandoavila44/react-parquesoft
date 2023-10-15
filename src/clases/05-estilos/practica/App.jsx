@@ -1,5 +1,5 @@
-import Item from './Components/Item'
-import List from './Components/List'
+import Item from '../practicaEstilos/Item'
+import Lista from '../practicaEstilos/Lista'
 
 const Components = () => {
   return (
@@ -15,7 +15,7 @@ const Components = () => {
         <li>Juramentada</li>
       </ul>
       <hr />
-      <List>
+      <Lista>
         <Item>Elantris</Item>
         <Item>El camino de los reyes</Item>
         <Item>El imperio final</Item>
@@ -24,10 +24,10 @@ const Components = () => {
         <Item>El aliento de los dioses</Item>
         <Item>Palabras radiantes</Item>
         <Item>Juramentada</Item>
-      </List>
+      </Lista>
       <hr />
       <div className='compact-theme'>
-        <List>
+        <Lista>
           <Item>Elantris</Item>
           <Item>El camino de los reyes</Item>
           <Item>El imperio final</Item>
@@ -36,7 +36,7 @@ const Components = () => {
           <Item>El aliento de los dioses</Item>
           <Item>Palabras radiantes</Item>
           <Item>Juramentada</Item>
-        </List>
+        </Lista>
       </div>
     </>
   )
