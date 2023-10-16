@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Calculadora from './Calculadora';
+import Calculadora from '../practicaUseState/Calculadora';
 
 const App = () => {
   const [sum, setSum] = useState(0);
@@ -10,12 +10,12 @@ const App = () => {
 
   return (
     <div>
-      <Calculadora amount={1} onEqual={sumarCalculadora} />
-      <Calculadora amount={5} onEqual={sumarCalculadora} />
-      <Calculadora amount={13} onEqual={sumarCalculadora} />
-      <h2>Suma total: {sum}</h2>
+      <Calculadora cantidad={1} resultado={sumarCalculadora} />
+      <Calculadora cantidad= {5}  resultado={sumarCalculadora} />
+      < Calculadora cantidad= {13} resultado={sumarCalculadora} />
+      <h1>Resultado: {sum} </h1>
     </div>
-  );
-};
+  )
+}
 
 export default App
